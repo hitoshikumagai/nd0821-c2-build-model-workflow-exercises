@@ -1,0 +1,24 @@
+{
+    "os": "macOS-10.16-x86_64-i386-64bit",
+    "python": "3.8.12",
+    "heartbeatAt": "2022-01-25T21:38:12.471981",
+    "startedAt": "2022-01-25T21:38:10.893251",
+    "docker": null,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": [
+        "-f",
+        "/Users/kumagaihitoshi/Library/Jupyter/runtime/kernel-8d7264df-8075-48a7-96d8-4b80a8906ba7.json"
+    ],
+    "state": "running",
+    "program": "nd0821-c2-build-model-workflow-exercises/lesson-1-machine-learning-pipelines/demo/Upload and version artifacts-jvsc-d30ca84e-f009-4b21-af29-87c73f29b79f.ipynb",
+    "root": "/Users/kumagaihitoshi/Documents/GitHub/nd0821-c2-build-model-workflow-exercises",
+    "git": {
+        "remote": "https://github.com/hitoshikumagai/nd0821-c2-build-model-workflow-exercises.git",
+        "commit": "b4e585e68b0758a9897c69f793a7d22f63426a9c"
+    },
+    "email": "78469337+hitoshikumagai@users.noreply.github.com",
+    "host": "kumagaioshisMBP",
+    "username": "kumagaihitoshi",
+    "executable": "/Users/kumagaihitoshi/.conda/envs/udacity/bin/python"
+}
