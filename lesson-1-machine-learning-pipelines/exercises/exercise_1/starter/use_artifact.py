@@ -19,7 +19,7 @@ def go(args):
     # YOUR CODE HERE: get the artifact and store its local path in the variable "artifact_path"
     # HINT: you can get the artifact path by using the "file()" method
 
-    artifact_path = artifact.file()
+    artifact_path = artifact.file(args.artifact_path)
 
     logger.info("Artifact content:")
     with open(artifact_path, "r") as fp:
