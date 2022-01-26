@@ -1,0 +1,91 @@
+diff --git a/lesson-1-machine-learning-pipelines/exercises/exercise_1/starter/upload_artifact.py b/lesson-1-machine-learning-pipelines/exercises/exercise_1/starter/upload_artifact.py
+index eac2a65..05b0258 100644
+--- a/lesson-1-machine-learning-pipelines/exercises/exercise_1/starter/upload_artifact.py
++++ b/lesson-1-machine-learning-pipelines/exercises/exercise_1/starter/upload_artifact.py
+@@ -15,14 +15,13 @@ def go(args):
+ 
+     # Create a W&B run in the project ``exercise_1``. Set the option ``job_type="upload_file"``:
+ 
+-    # YOUR CODE HERE
+-    with wandb.init(project='exercise_1') as run:
+-        artifact = wandb.artifact(
+-        name = args.artifact_name
+-        type = args.artifact_type
+-        description = args.artifact_description
+-        )
+-        artifact.add_file(args.artifact_name)
++    # YOUR CODE HEREs
++    artifact = wandb.Artifact(
++    name = args.artifact_name,
++    type = args.artifact_type,
++    description = args.artifact_description
++    )
++    artifact.add_file(args.input_file)
+ 
+     # Create an instance of the class ``wandb.Artifact``. Use the ``artifact_name`` parameter to fill
+     # the keyword ``name`` when constructing the wandb.Artifact class.
+diff --git a/lesson-1-machine-learning-pipelines/exercises/exercise_1/starter/use_artifact.py b/lesson-1-machine-learning-pipelines/exercises/exercise_1/starter/use_artifact.py
+index 4f209b9..95f0118 100644
+--- a/lesson-1-machine-learning-pipelines/exercises/exercise_1/starter/use_artifact.py
++++ b/lesson-1-machine-learning-pipelines/exercises/exercise_1/starter/use_artifact.py
+@@ -18,8 +18,11 @@ def go(args):
+ 
+     # YOUR CODE HERE: get the artifact and store its local path in the variable "artifact_path"
+     # HINT: you can get the artifact path by using the "file()" method
++    logger.info("Run artifact")
++    artifact = run.use_artifact(args.artifact_name)
+ 
+-    artifact_path = artifact.file(args.artifact_path)
++    logger.info("Add artifact file name")
++    artifact_path = artifact.file()
+ 
+     logger.info("Artifact content:")
+     with open(artifact_path, "r") as fp:
+diff --git a/lesson-1-machine-learning-pipelines/exercises/exercise_1/starter/zen.txt b/lesson-1-machine-learning-pipelines/exercises/exercise_1/starter/zen.txt
+index 634c12b..85789d4 100644
+--- a/lesson-1-machine-learning-pipelines/exercises/exercise_1/starter/zen.txt
++++ b/lesson-1-machine-learning-pipelines/exercises/exercise_1/starter/zen.txt
+@@ -19,3 +19,4 @@ Although never is often better than *right* now.
+ If the implementation is hard to explain, it's a bad idea.
+ If the implementation is easy to explain, it may be a good idea.
+ Namespaces are one honking great idea -- let's do more of those!
++
+diff --git a/lesson-1-machine-learning-pipelines/exercises/exercise_2/README.md b/lesson-1-machine-learning-pipelines/exercises/exercise_2/README.md
+index 4f0383e..62161a4 100644
+--- a/lesson-1-machine-learning-pipelines/exercises/exercise_2/README.md
++++ b/lesson-1-machine-learning-pipelines/exercises/exercise_2/README.md
+@@ -32,4 +32,6 @@ python download_data.py \
+    * ``artifact_description="This data sets consists of 3 different types of irises’ (Setosa, Versicolour, and Virginica) petal and sepal length"``
+    
+ 4. Check in your W&B account that the ``exercise_2`` project has been created, and that there is at
+-   least one version of the ``iris`` dataset.
+\ No newline at end of file
++   least one version of the ``iris`` dataset.
++
++mlflow run . -P file_url=https://raw.githubusercontent.com/scikit-learn/scikit-learn/4dfdfb4e1bb3719628753a4ece995a1b2fa5312a/sklearn/datasets/data/iris.csv -P artifact_name=iris -P artifact_description="This data sets consists of 3 different types of irises’ (Setosa, Versicolour, and Virginica) petal and sepal length"
+diff --git a/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/MLproject b/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/MLproject
+index e69de29..71bbf66 100644
+--- a/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/MLproject
++++ b/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/MLproject
+@@ -0,0 +1,7 @@
++name: download_data
++conda_env: conda.yml
++
++entry_points:
++  main:
++    command: >-
++      jupyter notebook
+\ No newline at end of file
+diff --git a/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/conda.yml b/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/conda.yml
+index f216511..bffb4c9 100644
+--- a/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/conda.yml
++++ b/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/conda.yml
+@@ -10,4 +10,5 @@ dependencies:
+   - pandas-profiling=2.11.0
+   - pyarrow=2.0
+   - pip:
+-      - wandb==0.10.21
+\ No newline at end of file
++      - wandb==0.10.21
++      - pyarrow==2.0
+\ No newline at end of file

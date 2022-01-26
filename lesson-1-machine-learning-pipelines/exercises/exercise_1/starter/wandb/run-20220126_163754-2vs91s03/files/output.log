@@ -1,0 +1,8 @@
+2022-01-26 16:37:57,858 Getting artifact
+2022-01-26 16:37:57,858 Creating run in project exercise_1
+Traceback (most recent call last):
+  File "use_artifact.py", line 42, in <module>
+    go(args)
+  File "use_artifact.py", line 22, in go
+    artifact_path = run.getartifact_path(args.artifact_path)
+AttributeError: 'Run' object has no attribute 'getartifact_path'

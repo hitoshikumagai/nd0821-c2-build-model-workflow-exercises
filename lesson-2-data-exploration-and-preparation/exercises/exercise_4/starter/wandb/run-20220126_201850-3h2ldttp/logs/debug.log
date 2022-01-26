@@ -1,0 +1,156 @@
+2022-01-26 20:18:50,912 INFO    MainThread:99792 [wandb_setup.py:_flush():71] setting env: {}
+2022-01-26 20:18:50,912 INFO    MainThread:99792 [wandb_setup.py:_flush():71] setting login settings: {}
+2022-01-26 20:18:50,913 INFO    MainThread:99792 [wandb_init.py:_log_setup():371] Logging user logs to /Users/kumagaihitoshi/Documents/GitHub/nd0821-c2-build-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/wandb/run-20220126_201850-3h2ldttp/logs/debug.log
+2022-01-26 20:18:50,913 INFO    MainThread:99792 [wandb_init.py:_log_setup():372] Logging internal logs to /Users/kumagaihitoshi/Documents/GitHub/nd0821-c2-build-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/wandb/run-20220126_201850-3h2ldttp/logs/debug-internal.log
+2022-01-26 20:18:50,913 INFO    MainThread:99792 [wandb_init.py:_jupyter_setup():321] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7f9341071910>
+2022-01-26 20:18:50,914 INFO    MainThread:99792 [wandb_init.py:init():404] calling init triggers
+2022-01-26 20:18:50,914 INFO    MainThread:99792 [wandb_init.py:init():409] wandb.init called with sweep_config: {}
+config: {}
+2022-01-26 20:18:50,914 INFO    MainThread:99792 [wandb_init.py:init():460] starting backend
+2022-01-26 20:18:50,914 INFO    MainThread:99792 [backend.py:_multiprocessing_setup():99] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2022-01-26 20:18:50,940 INFO    MainThread:99792 [backend.py:ensure_launched():216] starting backend process...
+2022-01-26 20:18:50,961 INFO    MainThread:99792 [backend.py:ensure_launched():221] started backend process with pid: 239
+2022-01-26 20:18:50,964 INFO    MainThread:99792 [wandb_init.py:init():469] backend started and connected
+2022-01-26 20:18:51,021 INFO    MainThread:99792 [wandb_run.py:_label_probe_notebook():911] probe notebook
+2022-01-26 20:18:51,023 INFO    MainThread:99792 [wandb_run.py:_label_probe_notebook():921] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2022-01-26 20:18:51,023 INFO    MainThread:99792 [wandb_init.py:init():533] updated telemetry
+2022-01-26 20:18:51,061 INFO    MainThread:99792 [wandb_init.py:init():563] communicating current version
+2022-01-26 20:18:52,257 INFO    MainThread:99792 [wandb_init.py:init():568] got version response 
+2022-01-26 20:18:52,257 INFO    MainThread:99792 [wandb_init.py:init():578] communicating run to backend with 30 second timeout
+2022-01-26 20:18:52,582 INFO    MainThread:99792 [wandb_init.py:init():606] starting run threads in backend
+2022-01-26 20:18:55,469 INFO    MainThread:99792 [wandb_run.py:_console_start():1810] atexit reg
+2022-01-26 20:18:55,470 INFO    MainThread:99792 [wandb_run.py:_redirect():1684] redirect: SettingsConsole.WRAP
+2022-01-26 20:18:55,470 INFO    MainThread:99792 [wandb_run.py:_redirect():1721] Wrapping output streams.
+2022-01-26 20:18:55,471 INFO    MainThread:99792 [wandb_run.py:_redirect():1745] Redirects installed.
+2022-01-26 20:18:55,471 INFO    MainThread:99792 [wandb_init.py:init():633] run started, returning control to user process
+2022-01-26 20:18:55,472 INFO    MainThread:99792 [wandb_init.py:_pause_backend():284] pausing backend
+2022-01-26 20:18:55,472 INFO    MainThread:99792 [jupyter.py:save_ipynb():377] looking for notebook: nd0821-c2-build-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/eda-jvsc-12089546-1269-4807-937f-aa336ac2c14d.ipynb
+2022-01-26 20:21:01,000 INFO    MainThread:99792 [wandb_init.py:_resume_backend():293] resuming backend
+2022-01-26 20:21:02,050 INFO    MainThread:99792 [wandb_init.py:_pause_backend():284] pausing backend
+2022-01-26 20:21:02,051 INFO    MainThread:99792 [jupyter.py:save_ipynb():377] looking for notebook: nd0821-c2-build-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/eda-jvsc-12089546-1269-4807-937f-aa336ac2c14d.ipynb
+2022-01-26 20:21:44,284 INFO    MainThread:99792 [wandb_init.py:_resume_backend():293] resuming backend
+2022-01-26 20:21:46,798 INFO    MainThread:99792 [wandb_init.py:_pause_backend():284] pausing backend
+2022-01-26 20:21:46,798 INFO    MainThread:99792 [jupyter.py:save_ipynb():377] looking for notebook: nd0821-c2-build-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/eda-jvsc-12089546-1269-4807-937f-aa336ac2c14d.ipynb
+2022-01-26 20:21:50,465 INFO    MainThread:99792 [wandb_init.py:_resume_backend():293] resuming backend
+2022-01-26 20:21:52,409 INFO    MainThread:99792 [wandb_init.py:_pause_backend():284] pausing backend
+2022-01-26 20:21:52,410 INFO    MainThread:99792 [jupyter.py:save_ipynb():377] looking for notebook: nd0821-c2-build-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/eda-jvsc-12089546-1269-4807-937f-aa336ac2c14d.ipynb
+2022-01-26 20:21:56,484 INFO    MainThread:99792 [wandb_init.py:_resume_backend():293] resuming backend
+2022-01-26 20:21:58,436 INFO    MainThread:99792 [wandb_init.py:_pause_backend():284] pausing backend
+2022-01-26 20:21:58,436 INFO    MainThread:99792 [jupyter.py:save_ipynb():377] looking for notebook: nd0821-c2-build-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/eda-jvsc-12089546-1269-4807-937f-aa336ac2c14d.ipynb
+2022-01-26 20:23:23,585 INFO    MainThread:99792 [wandb_init.py:_resume_backend():293] resuming backend
+2022-01-26 20:23:25,591 INFO    MainThread:99792 [wandb_init.py:_pause_backend():284] pausing backend
+2022-01-26 20:23:25,592 INFO    MainThread:99792 [jupyter.py:save_ipynb():377] looking for notebook: nd0821-c2-build-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/eda-jvsc-12089546-1269-4807-937f-aa336ac2c14d.ipynb
+2022-01-26 20:24:36,558 INFO    MainThread:99792 [wandb_run.py:_atexit_cleanup():1780] got exitcode: 0
+2022-01-26 20:24:36,566 INFO    MainThread:99792 [wandb_run.py:_restore():1752] restore
+2022-01-26 20:24:37,071 INFO    MainThread:99792 [wandb_run.py:_wait_for_finish():1912] got exit ret: file_counts {
+  wandb_count: 2
+}
+pusher_stats {
+  uploaded_bytes: 5362
+  total_bytes: 5362
+}
+
+2022-01-26 20:24:37,425 INFO    MainThread:99792 [wandb_run.py:_wait_for_finish():1912] got exit ret: file_counts {
+  wandb_count: 2
+}
+pusher_stats {
+  uploaded_bytes: 5362
+  total_bytes: 5362
+}
+
+2022-01-26 20:24:38,336 INFO    MainThread:99792 [wandb_run.py:_wait_for_finish():1912] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 5362
+  total_bytes: 19577
+}
+
+2022-01-26 20:24:38,444 INFO    MainThread:99792 [wandb_run.py:_wait_for_finish():1912] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 5362
+  total_bytes: 19577
+}
+
+2022-01-26 20:24:38,553 INFO    MainThread:99792 [wandb_run.py:_wait_for_finish():1912] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 5362
+  total_bytes: 19577
+}
+
+2022-01-26 20:24:38,661 INFO    MainThread:99792 [wandb_run.py:_wait_for_finish():1912] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 5362
+  total_bytes: 19577
+}
+
+2022-01-26 20:24:38,768 INFO    MainThread:99792 [wandb_run.py:_wait_for_finish():1912] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 5362
+  total_bytes: 19577
+}
+
+2022-01-26 20:24:38,875 INFO    MainThread:99792 [wandb_run.py:_wait_for_finish():1912] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 5362
+  total_bytes: 19577
+}
+
+2022-01-26 20:24:38,981 INFO    MainThread:99792 [wandb_run.py:_wait_for_finish():1912] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 19577
+  total_bytes: 19577
+}
+
+2022-01-26 20:24:39,087 INFO    MainThread:99792 [wandb_run.py:_wait_for_finish():1912] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 19577
+  total_bytes: 19577
+}
+
+2022-01-26 20:24:39,195 INFO    MainThread:99792 [wandb_run.py:_wait_for_finish():1912] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 19577
+  total_bytes: 19577
+}
+
+2022-01-26 20:24:39,303 INFO    MainThread:99792 [wandb_run.py:_wait_for_finish():1912] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 19577
+  total_bytes: 19577
+}
+
+2022-01-26 20:24:39,410 INFO    MainThread:99792 [wandb_run.py:_wait_for_finish():1912] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 19577
+  total_bytes: 19577
+}
+
+2022-01-26 20:24:39,513 INFO    MainThread:99792 [wandb_run.py:_wait_for_finish():1912] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 19577
+  total_bytes: 19577
+}
+

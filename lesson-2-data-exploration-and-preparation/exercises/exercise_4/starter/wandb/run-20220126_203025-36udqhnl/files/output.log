@@ -1,0 +1,88 @@
+
+zsh:1: command not found: pyarrow
+
+
+
+
+Collecting package metadata (current_repodata.json): done
+
+
+
+
+
+
+
+
+
+Solving environment: failed with initial frozen solve. Retrying with flexible solve.
+
+
+
+
+
+
+
+Solving environment: failed with repodata from current_repodata.json, will retry with next repodata source.
+
+
+
+Collecting package metadata (repodata.json): done
+
+
+
+
+
+
+
+
+
+
+Solving environment: done
+## Package Plan ##
+  environment location: /Users/kumagaihitoshi/.conda/envs/udacity
+  added / updated specs:
+    - pyarrow
+The following packages will be downloaded:
+    package                    |            build
+    ---------------------------|-----------------
+    arrow-cpp-6.0.1            |py38haa61a5c_8_cpu        19.1 MB  conda-forge
+    aws-c-cal-0.5.11           |       hd2e2f4b_0          30 KB  conda-forge
+    aws-c-common-0.6.2         |       h0d85af4_0         150 KB  conda-forge
+    aws-c-event-stream-0.2.7   |      hb9330a7_13          40 KB  conda-forge
+    aws-c-io-0.10.5            |       h35aa462_0         109 KB  conda-forge
+    aws-checksums-0.1.11       |       h0010a65_7          48 KB  conda-forge
+    aws-sdk-cpp-1.8.186        |       h766a74d_3         3.7 MB  conda-forge
+    grpc-cpp-1.42.0            |       h6da9ac5_1         3.1 MB  conda-forge
+    orc-1.7.2                  |       h84518c8_0         454 KB  conda-forge
+    pyarrow-6.0.1              |py38h2688f9d_8_cpu         2.6 MB  conda-forge
+    ------------------------------------------------------------
+                                           Total:        29.3 MB
+The following NEW packages will be INSTALLED:
+  abseil-cpp         conda-forge/osx-64::abseil-cpp-20210324.2-he49afe7_0
+  arrow-cpp          conda-forge/osx-64::arrow-cpp-6.0.1-py38haa61a5c_8_cpu
+  aws-c-cal          conda-forge/osx-64::aws-c-cal-0.5.11-hd2e2f4b_0
+  aws-c-common       conda-forge/osx-64::aws-c-common-0.6.2-h0d85af4_0
+  aws-c-event-stream conda-forge/osx-64::aws-c-event-stream-0.2.7-hb9330a7_13
+  aws-c-io           conda-forge/osx-64::aws-c-io-0.10.5-h35aa462_0
+  aws-checksums      conda-forge/osx-64::aws-checksums-0.1.11-h0010a65_7
+  aws-sdk-cpp        conda-forge/osx-64::aws-sdk-cpp-1.8.186-h766a74d_3
+  bzip2              conda-forge/osx-64::bzip2-1.0.8-h0d85af4_4
+  c-ares             conda-forge/osx-64::c-ares-1.18.1-h0d85af4_0
+  gflags             conda-forge/osx-64::gflags-2.2.2-hb1e8313_1004
+  glog               conda-forge/osx-64::glog-0.5.0-h25b26a9_0
+  grpc-cpp           conda-forge/osx-64::grpc-cpp-1.42.0-h6da9ac5_1
+  libcurl            conda-forge/osx-64::libcurl-7.81.0-hf45b732_0
+  libev              conda-forge/osx-64::libev-4.33-haf1e3a3_1
+  libevent           conda-forge/osx-64::libevent-2.1.10-h815e4d9_4
+  libnghttp2         conda-forge/osx-64::libnghttp2-1.43.0-h6f36284_1
+  libssh2            conda-forge/osx-64::libssh2-1.10.0-h52ee1ee_2
+  libthrift          conda-forge/osx-64::libthrift-0.15.0-hab56fdc_1
+  libutf8proc        conda-forge/osx-64::libutf8proc-2.7.0-h0d85af4_0
+  orc                conda-forge/osx-64::orc-1.7.2-h84518c8_0
+  parquet-cpp        conda-forge/noarch::parquet-cpp-1.5.1-2
+  pyarrow            conda-forge/osx-64::pyarrow-6.0.1-py38h2688f9d_8_cpu
+  re2                conda-forge/osx-64::re2-2021.11.01-he49afe7_0
+  snappy             conda-forge/osx-64::snappy-1.1.8-hb1e8313_3
+Proceed ([y]/n)? ^C
+CondaSystemExit:
+Operation aborted.  Exiting.

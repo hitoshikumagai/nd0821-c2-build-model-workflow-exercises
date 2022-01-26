@@ -1,0 +1,8 @@
+2022-01-26 16:38:41,056 Getting artifact
+2022-01-26 16:38:41,056 Creating run in project exercise_1
+Traceback (most recent call last):
+  File "use_artifact.py", line 42, in <module>
+    go(args)
+  File "use_artifact.py", line 22, in go
+    artifact_path = run.use_artifact(args.artifact_path)
+AttributeError: 'Namespace' object has no attribute 'artifact_path'

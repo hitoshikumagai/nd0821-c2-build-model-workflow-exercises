@@ -1,0 +1,154 @@
+2022-01-26 20:03:56,680 INFO    MainThread:98900 [internal.py:wandb_internal():87] W&B internal server running at pid: 98900, started at: 2022-01-26 20:03:56.680083
+2022-01-26 20:03:56,681 DEBUG   HandlerThread:98900 [handler.py:handle_request():130] handle_request: check_version
+2022-01-26 20:03:56,681 INFO    WriterThread:98900 [datastore.py:open_for_write():77] open: /Users/kumagaihitoshi/Documents/GitHub/nd0821-c2-build-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/wandb/run-20220126_200355-27wvcwbu/run-27wvcwbu.wandb
+2022-01-26 20:03:56,682 DEBUG   SenderThread:98900 [sender.py:send():234] send: header
+2022-01-26 20:03:56,682 DEBUG   SenderThread:98900 [sender.py:send_request():248] send_request: check_version
+2022-01-26 20:03:56,852 DEBUG   SenderThread:98900 [sender.py:send():234] send: run
+2022-01-26 20:03:57,255 INFO    SenderThread:98900 [dir_watcher.py:__init__():169] watching files in: /Users/kumagaihitoshi/Documents/GitHub/nd0821-c2-build-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/wandb/run-20220126_200355-27wvcwbu/files
+2022-01-26 20:03:57,256 INFO    SenderThread:98900 [sender.py:_start_run_threads():804] run started: 27wvcwbu with start time 1643195035
+2022-01-26 20:03:57,256 DEBUG   SenderThread:98900 [sender.py:send():234] send: summary
+2022-01-26 20:03:57,257 INFO    SenderThread:98900 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-26 20:03:57,259 DEBUG   HandlerThread:98900 [handler.py:handle_request():130] handle_request: run_start
+2022-01-26 20:03:57,260 DEBUG   HandlerThread:98900 [meta.py:__init__():40] meta init
+2022-01-26 20:03:57,260 DEBUG   HandlerThread:98900 [meta.py:__init__():54] meta init done
+2022-01-26 20:03:57,260 DEBUG   HandlerThread:98900 [meta.py:probe():214] probe
+2022-01-26 20:03:57,262 DEBUG   HandlerThread:98900 [meta.py:_setup_git():204] setup git
+2022-01-26 20:03:57,294 DEBUG   HandlerThread:98900 [meta.py:_setup_git():211] setup git done
+2022-01-26 20:03:57,295 DEBUG   HandlerThread:98900 [meta.py:_save_pip():58] save pip
+2022-01-26 20:03:57,295 DEBUG   HandlerThread:98900 [meta.py:_save_pip():72] save pip done
+2022-01-26 20:03:57,295 DEBUG   HandlerThread:98900 [meta.py:_save_conda():79] save conda
+2022-01-26 20:03:58,258 INFO    Thread-8  :98900 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/kumagaihitoshi/Documents/GitHub/nd0821-c2-build-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/wandb/run-20220126_200355-27wvcwbu/files/conda-environment.yaml
+2022-01-26 20:03:58,258 INFO    Thread-8  :98900 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/kumagaihitoshi/Documents/GitHub/nd0821-c2-build-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/wandb/run-20220126_200355-27wvcwbu/files/wandb-summary.json
+2022-01-26 20:03:58,258 INFO    Thread-8  :98900 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/kumagaihitoshi/Documents/GitHub/nd0821-c2-build-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/wandb/run-20220126_200355-27wvcwbu/files/requirements.txt
+2022-01-26 20:03:59,907 DEBUG   HandlerThread:98900 [meta.py:_save_conda():89] save conda done
+2022-01-26 20:03:59,907 DEBUG   HandlerThread:98900 [meta.py:probe():252] probe done
+2022-01-26 20:03:59,911 DEBUG   SenderThread:98900 [sender.py:send():234] send: files
+2022-01-26 20:03:59,911 INFO    SenderThread:98900 [sender.py:_save_file():939] saving file wandb-metadata.json with policy now
+2022-01-26 20:03:59,915 DEBUG   HandlerThread:98900 [handler.py:handle_request():130] handle_request: stop_status
+2022-01-26 20:03:59,915 DEBUG   SenderThread:98900 [sender.py:send_request():248] send_request: stop_status
+2022-01-26 20:04:00,258 INFO    Thread-8  :98900 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/kumagaihitoshi/Documents/GitHub/nd0821-c2-build-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/wandb/run-20220126_200355-27wvcwbu/files/conda-environment.yaml
+2022-01-26 20:04:00,258 INFO    Thread-8  :98900 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/kumagaihitoshi/Documents/GitHub/nd0821-c2-build-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/wandb/run-20220126_200355-27wvcwbu/files/output.log
+2022-01-26 20:04:00,258 INFO    Thread-8  :98900 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/kumagaihitoshi/Documents/GitHub/nd0821-c2-build-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/wandb/run-20220126_200355-27wvcwbu/files/wandb-metadata.json
+2022-01-26 20:04:00,741 INFO    Thread-11 :98900 [upload_job.py:push():137] Uploaded file /var/folders/y8/7lrxsg1d77qddnpx9z8h9qz40000gn/T/tmpopdu0hiswandb/38hfe4pk-wandb-metadata.json
+2022-01-26 20:04:01,086 DEBUG   HandlerThread:98900 [handler.py:handle_request():130] handle_request: log_artifact
+2022-01-26 20:04:01,087 DEBUG   SenderThread:98900 [sender.py:send_request():248] send_request: log_artifact
+2022-01-26 20:04:02,269 INFO    Thread-8  :98900 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/kumagaihitoshi/Documents/GitHub/nd0821-c2-build-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/wandb/run-20220126_200355-27wvcwbu/files/output.log
+2022-01-26 20:04:03,444 DEBUG   HandlerThread:98900 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-26 20:04:04,282 INFO    Thread-8  :98900 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/kumagaihitoshi/Documents/GitHub/nd0821-c2-build-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/wandb/run-20220126_200355-27wvcwbu/files/output.log
+2022-01-26 20:04:04,632 INFO    Thread-13 :98900 [upload_job.py:push():95] Uploaded file /Users/kumagaihitoshi/.cache/wandb/artifacts/obj/md5/f7/6effe6a88611920f11e469d9f51f98
+2022-01-26 20:04:05,963 INFO    SenderThread:98900 [sender.py:send_request_log_artifact():968] logged artifact genres_mod.parquet - {'id': 'QXJ0aWZhY3Q6NzAwOTE4MzU=', 'digest': 'd07cfe0c8bd86971c9f85bce13c85266', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjEwMjE4NDU1', 'latestArtifact': None}, 'version': 'latest'}
+2022-01-26 20:04:05,964 DEBUG   SenderThread:98900 [sender.py:send():234] send: telemetry
+2022-01-26 20:04:05,964 DEBUG   SenderThread:98900 [sender.py:send():234] send: exit
+2022-01-26 20:04:05,966 INFO    SenderThread:98900 [sender.py:send_exit():366] handling exit code: 0
+2022-01-26 20:04:05,966 INFO    SenderThread:98900 [sender.py:send_exit():368] handling runtime: 6
+2022-01-26 20:04:05,967 INFO    SenderThread:98900 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-26 20:04:05,968 INFO    SenderThread:98900 [sender.py:send_exit():374] send defer
+2022-01-26 20:04:05,968 DEBUG   SenderThread:98900 [sender.py:send_request():248] send_request: poll_exit
+2022-01-26 20:04:05,969 DEBUG   HandlerThread:98900 [handler.py:handle_request():130] handle_request: defer
+2022-01-26 20:04:05,969 INFO    HandlerThread:98900 [handler.py:handle_request_defer():147] handle defer: 0
+2022-01-26 20:04:05,969 DEBUG   SenderThread:98900 [sender.py:send_request():248] send_request: defer
+2022-01-26 20:04:05,969 INFO    SenderThread:98900 [sender.py:send_request_defer():383] handle sender defer: 0
+2022-01-26 20:04:05,970 INFO    SenderThread:98900 [sender.py:transition_state():387] send defer: 1
+2022-01-26 20:04:05,970 DEBUG   HandlerThread:98900 [handler.py:handle_request():130] handle_request: defer
+2022-01-26 20:04:05,970 INFO    HandlerThread:98900 [handler.py:handle_request_defer():147] handle defer: 1
+2022-01-26 20:04:05,974 DEBUG   SenderThread:98900 [sender.py:send_request():248] send_request: defer
+2022-01-26 20:04:05,974 INFO    SenderThread:98900 [sender.py:send_request_defer():383] handle sender defer: 1
+2022-01-26 20:04:05,974 INFO    SenderThread:98900 [sender.py:transition_state():387] send defer: 2
+2022-01-26 20:04:05,974 DEBUG   SenderThread:98900 [sender.py:send():234] send: stats
+2022-01-26 20:04:05,975 DEBUG   HandlerThread:98900 [handler.py:handle_request():130] handle_request: defer
+2022-01-26 20:04:05,975 INFO    HandlerThread:98900 [handler.py:handle_request_defer():147] handle defer: 2
+2022-01-26 20:04:05,975 DEBUG   SenderThread:98900 [sender.py:send_request():248] send_request: defer
+2022-01-26 20:04:05,975 INFO    SenderThread:98900 [sender.py:send_request_defer():383] handle sender defer: 2
+2022-01-26 20:04:05,975 INFO    SenderThread:98900 [sender.py:transition_state():387] send defer: 3
+2022-01-26 20:04:05,975 DEBUG   HandlerThread:98900 [handler.py:handle_request():130] handle_request: defer
+2022-01-26 20:04:05,976 INFO    HandlerThread:98900 [handler.py:handle_request_defer():147] handle defer: 3
+2022-01-26 20:04:05,976 DEBUG   SenderThread:98900 [sender.py:send():234] send: summary
+2022-01-26 20:04:05,976 INFO    SenderThread:98900 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-26 20:04:05,977 DEBUG   SenderThread:98900 [sender.py:send_request():248] send_request: defer
+2022-01-26 20:04:05,977 INFO    SenderThread:98900 [sender.py:send_request_defer():383] handle sender defer: 3
+2022-01-26 20:04:05,977 INFO    SenderThread:98900 [sender.py:transition_state():387] send defer: 4
+2022-01-26 20:04:05,977 DEBUG   HandlerThread:98900 [handler.py:handle_request():130] handle_request: defer
+2022-01-26 20:04:05,977 INFO    HandlerThread:98900 [handler.py:handle_request_defer():147] handle defer: 4
+2022-01-26 20:04:05,977 DEBUG   SenderThread:98900 [sender.py:send_request():248] send_request: defer
+2022-01-26 20:04:05,977 INFO    SenderThread:98900 [sender.py:send_request_defer():383] handle sender defer: 4
+2022-01-26 20:04:06,076 DEBUG   HandlerThread:98900 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-26 20:04:06,293 INFO    Thread-8  :98900 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/kumagaihitoshi/Documents/GitHub/nd0821-c2-build-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/wandb/run-20220126_200355-27wvcwbu/files/wandb-summary.json
+2022-01-26 20:04:06,308 INFO    SenderThread:98900 [sender.py:transition_state():387] send defer: 5
+2022-01-26 20:04:06,308 DEBUG   SenderThread:98900 [sender.py:send_request():248] send_request: poll_exit
+2022-01-26 20:04:06,309 DEBUG   HandlerThread:98900 [handler.py:handle_request():130] handle_request: defer
+2022-01-26 20:04:06,309 INFO    HandlerThread:98900 [handler.py:handle_request_defer():147] handle defer: 5
+2022-01-26 20:04:06,309 DEBUG   SenderThread:98900 [sender.py:send_request():248] send_request: defer
+2022-01-26 20:04:06,309 INFO    SenderThread:98900 [sender.py:send_request_defer():383] handle sender defer: 5
+2022-01-26 20:04:06,309 INFO    SenderThread:98900 [dir_watcher.py:finish():283] shutting down directory watcher
+2022-01-26 20:04:06,415 DEBUG   HandlerThread:98900 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-26 20:04:07,296 INFO    Thread-8  :98900 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/kumagaihitoshi/Documents/GitHub/nd0821-c2-build-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/wandb/run-20220126_200355-27wvcwbu/files/config.yaml
+2022-01-26 20:04:07,298 INFO    SenderThread:98900 [dir_watcher.py:finish():313] scan: /Users/kumagaihitoshi/Documents/GitHub/nd0821-c2-build-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/wandb/run-20220126_200355-27wvcwbu/files
+2022-01-26 20:04:07,298 INFO    SenderThread:98900 [dir_watcher.py:finish():327] scan save: /Users/kumagaihitoshi/Documents/GitHub/nd0821-c2-build-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/wandb/run-20220126_200355-27wvcwbu/files/requirements.txt requirements.txt
+2022-01-26 20:04:07,298 INFO    SenderThread:98900 [dir_watcher.py:finish():327] scan save: /Users/kumagaihitoshi/Documents/GitHub/nd0821-c2-build-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/wandb/run-20220126_200355-27wvcwbu/files/output.log output.log
+2022-01-26 20:04:07,299 INFO    SenderThread:98900 [dir_watcher.py:finish():327] scan save: /Users/kumagaihitoshi/Documents/GitHub/nd0821-c2-build-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/wandb/run-20220126_200355-27wvcwbu/files/config.yaml config.yaml
+2022-01-26 20:04:07,305 INFO    SenderThread:98900 [dir_watcher.py:finish():327] scan save: /Users/kumagaihitoshi/Documents/GitHub/nd0821-c2-build-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/wandb/run-20220126_200355-27wvcwbu/files/wandb-summary.json wandb-summary.json
+2022-01-26 20:04:07,313 INFO    SenderThread:98900 [dir_watcher.py:finish():327] scan save: /Users/kumagaihitoshi/Documents/GitHub/nd0821-c2-build-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/wandb/run-20220126_200355-27wvcwbu/files/conda-environment.yaml conda-environment.yaml
+2022-01-26 20:04:07,318 INFO    SenderThread:98900 [dir_watcher.py:finish():327] scan save: /Users/kumagaihitoshi/Documents/GitHub/nd0821-c2-build-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/wandb/run-20220126_200355-27wvcwbu/files/wandb-metadata.json wandb-metadata.json
+2022-01-26 20:04:07,319 INFO    SenderThread:98900 [sender.py:transition_state():387] send defer: 6
+2022-01-26 20:04:07,320 DEBUG   SenderThread:98900 [sender.py:send_request():248] send_request: poll_exit
+2022-01-26 20:04:07,320 DEBUG   HandlerThread:98900 [handler.py:handle_request():130] handle_request: defer
+2022-01-26 20:04:07,321 INFO    HandlerThread:98900 [handler.py:handle_request_defer():147] handle defer: 6
+2022-01-26 20:04:07,324 DEBUG   SenderThread:98900 [sender.py:send_request():248] send_request: defer
+2022-01-26 20:04:07,324 INFO    SenderThread:98900 [sender.py:send_request_defer():383] handle sender defer: 6
+2022-01-26 20:04:07,324 INFO    SenderThread:98900 [file_pusher.py:finish():177] shutting down file pusher
+2022-01-26 20:04:07,428 DEBUG   HandlerThread:98900 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-26 20:04:07,428 DEBUG   SenderThread:98900 [sender.py:send_request():248] send_request: poll_exit
+2022-01-26 20:04:07,536 DEBUG   HandlerThread:98900 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-26 20:04:07,536 DEBUG   SenderThread:98900 [sender.py:send_request():248] send_request: poll_exit
+2022-01-26 20:04:07,644 DEBUG   HandlerThread:98900 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-26 20:04:07,645 DEBUG   SenderThread:98900 [sender.py:send_request():248] send_request: poll_exit
+2022-01-26 20:04:07,753 DEBUG   HandlerThread:98900 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-26 20:04:07,753 DEBUG   SenderThread:98900 [sender.py:send_request():248] send_request: poll_exit
+2022-01-26 20:04:07,861 DEBUG   HandlerThread:98900 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-26 20:04:07,862 DEBUG   SenderThread:98900 [sender.py:send_request():248] send_request: poll_exit
+2022-01-26 20:04:07,971 DEBUG   HandlerThread:98900 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-26 20:04:07,972 DEBUG   SenderThread:98900 [sender.py:send_request():248] send_request: poll_exit
+2022-01-26 20:04:08,077 DEBUG   HandlerThread:98900 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-26 20:04:08,078 DEBUG   SenderThread:98900 [sender.py:send_request():248] send_request: poll_exit
+2022-01-26 20:04:08,187 DEBUG   HandlerThread:98900 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-26 20:04:08,188 DEBUG   SenderThread:98900 [sender.py:send_request():248] send_request: poll_exit
+2022-01-26 20:04:08,219 INFO    Thread-17 :98900 [upload_job.py:push():137] Uploaded file /Users/kumagaihitoshi/Documents/GitHub/nd0821-c2-build-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/wandb/run-20220126_200355-27wvcwbu/files/wandb-summary.json
+2022-01-26 20:04:08,220 INFO    Thread-14 :98900 [upload_job.py:push():137] Uploaded file /Users/kumagaihitoshi/Documents/GitHub/nd0821-c2-build-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/wandb/run-20220126_200355-27wvcwbu/files/requirements.txt
+2022-01-26 20:04:08,220 INFO    Thread-16 :98900 [upload_job.py:push():137] Uploaded file /Users/kumagaihitoshi/Documents/GitHub/nd0821-c2-build-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/wandb/run-20220126_200355-27wvcwbu/files/config.yaml
+2022-01-26 20:04:08,222 INFO    Thread-15 :98900 [upload_job.py:push():137] Uploaded file /Users/kumagaihitoshi/Documents/GitHub/nd0821-c2-build-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/wandb/run-20220126_200355-27wvcwbu/files/output.log
+2022-01-26 20:04:08,222 INFO    Thread-18 :98900 [upload_job.py:push():137] Uploaded file /Users/kumagaihitoshi/Documents/GitHub/nd0821-c2-build-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/wandb/run-20220126_200355-27wvcwbu/files/conda-environment.yaml
+2022-01-26 20:04:08,293 DEBUG   HandlerThread:98900 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-26 20:04:08,294 DEBUG   SenderThread:98900 [sender.py:send_request():248] send_request: poll_exit
+2022-01-26 20:04:08,402 DEBUG   HandlerThread:98900 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-26 20:04:08,403 DEBUG   SenderThread:98900 [sender.py:send_request():248] send_request: poll_exit
+2022-01-26 20:04:08,427 INFO    Thread-7  :98900 [sender.py:transition_state():387] send defer: 7
+2022-01-26 20:04:08,429 DEBUG   HandlerThread:98900 [handler.py:handle_request():130] handle_request: defer
+2022-01-26 20:04:08,429 INFO    HandlerThread:98900 [handler.py:handle_request_defer():147] handle defer: 7
+2022-01-26 20:04:08,429 DEBUG   SenderThread:98900 [sender.py:send_request():248] send_request: defer
+2022-01-26 20:04:08,429 INFO    SenderThread:98900 [sender.py:send_request_defer():383] handle sender defer: 7
+2022-01-26 20:04:08,511 DEBUG   HandlerThread:98900 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-26 20:04:09,053 INFO    SenderThread:98900 [sender.py:transition_state():387] send defer: 8
+2022-01-26 20:04:09,054 DEBUG   SenderThread:98900 [sender.py:send_request():248] send_request: poll_exit
+2022-01-26 20:04:09,055 DEBUG   HandlerThread:98900 [handler.py:handle_request():130] handle_request: defer
+2022-01-26 20:04:09,056 INFO    HandlerThread:98900 [handler.py:handle_request_defer():147] handle defer: 8
+2022-01-26 20:04:09,056 DEBUG   SenderThread:98900 [sender.py:send_request():248] send_request: defer
+2022-01-26 20:04:09,056 INFO    SenderThread:98900 [sender.py:send_request_defer():383] handle sender defer: 8
+2022-01-26 20:04:09,057 INFO    SenderThread:98900 [sender.py:transition_state():387] send defer: 9
+2022-01-26 20:04:09,058 DEBUG   HandlerThread:98900 [handler.py:handle_request():130] handle_request: defer
+2022-01-26 20:04:09,058 DEBUG   SenderThread:98900 [sender.py:send():234] send: final
+2022-01-26 20:04:09,058 INFO    HandlerThread:98900 [handler.py:handle_request_defer():147] handle defer: 9
+2022-01-26 20:04:09,058 DEBUG   SenderThread:98900 [sender.py:send():234] send: footer
+2022-01-26 20:04:09,059 DEBUG   SenderThread:98900 [sender.py:send_request():248] send_request: defer
+2022-01-26 20:04:09,059 INFO    SenderThread:98900 [sender.py:send_request_defer():383] handle sender defer: 9
+2022-01-26 20:04:09,164 DEBUG   HandlerThread:98900 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-26 20:04:09,165 DEBUG   SenderThread:98900 [sender.py:send_request():248] send_request: poll_exit
+2022-01-26 20:04:09,166 INFO    SenderThread:98900 [file_pusher.py:join():182] waiting for file pusher
+2022-01-26 20:04:09,495 DEBUG   HandlerThread:98900 [handler.py:handle_request():130] handle_request: get_summary
+2022-01-26 20:04:09,496 DEBUG   HandlerThread:98900 [handler.py:handle_request():130] handle_request: sampled_history
+2022-01-26 20:04:09,498 DEBUG   HandlerThread:98900 [handler.py:handle_request():130] handle_request: shutdown
+2022-01-26 20:04:09,498 INFO    HandlerThread:98900 [handler.py:finish():731] shutting down handler
+2022-01-26 20:04:10,063 INFO    WriterThread:98900 [datastore.py:close():281] close: /Users/kumagaihitoshi/Documents/GitHub/nd0821-c2-build-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/wandb/run-20220126_200355-27wvcwbu/run-27wvcwbu.wandb
+2022-01-26 20:04:10,494 INFO    SenderThread:98900 [sender.py:finish():1070] shutting down sender
+2022-01-26 20:04:10,494 INFO    SenderThread:98900 [file_pusher.py:finish():177] shutting down file pusher
+2022-01-26 20:04:10,495 INFO    SenderThread:98900 [file_pusher.py:join():182] waiting for file pusher
+2022-01-26 20:04:10,496 INFO    MainThread:98900 [internal.py:handle_exit():77] Internal process exited

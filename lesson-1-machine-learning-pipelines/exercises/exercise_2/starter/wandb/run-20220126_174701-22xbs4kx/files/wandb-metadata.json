@@ -1,0 +1,31 @@
+{
+    "os": "macOS-10.16-x86_64-i386-64bit",
+    "python": "3.8.12",
+    "heartbeatAt": "2022-01-26T08:47:02.576235",
+    "startedAt": "2022-01-26T08:47:01.226036",
+    "docker": null,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": [
+        "--file_url",
+        "https://raw.githubusercontent.com/scikit-learn/scikit-learn/4dfdfb4e1bb3719628753a4ece995a1b2fa5312a/sklearn/datasets/data/iris.csv",
+        "--artifact_name",
+        "iris",
+        "--artifact_type",
+        "raw_data",
+        "--artifact_description",
+        "The sklearn IRIS dataset"
+    ],
+    "state": "running",
+    "program": "download_data.py",
+    "codePath": "lesson-1-machine-learning-pipelines/exercises/exercise_2/starter/download_data.py",
+    "git": {
+        "remote": "https://github.com/hitoshikumagai/nd0821-c2-build-model-workflow-exercises.git",
+        "commit": "bc8f5247cdfadbbee2e49eefde2bab8084c63e6b"
+    },
+    "email": "78469337+hitoshikumagai@users.noreply.github.com",
+    "root": "/Users/kumagaihitoshi/Documents/GitHub/nd0821-c2-build-model-workflow-exercises",
+    "host": "kumagaioshisMBP",
+    "username": "kumagaihitoshi",
+    "executable": "/Users/kumagaihitoshi/.conda/envs/udacity/bin/python"
+}

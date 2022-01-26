@@ -1,0 +1,31 @@
+{
+    "os": "macOS-10.16-x86_64-i386-64bit",
+    "python": "3.8.12",
+    "heartbeatAt": "2022-01-26T08:13:26.543811",
+    "startedAt": "2022-01-26T08:13:25.319819",
+    "docker": null,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": [
+        "--input_file",
+        "zen.txt",
+        "--artifact_name",
+        "zen_of_python",
+        "--artifact_type",
+        "text_file",
+        "--artifact_description",
+        "20 aphorisms about writing good python code"
+    ],
+    "state": "running",
+    "program": "upload_artifact.py",
+    "codePath": "lesson-1-machine-learning-pipelines/exercises/exercise_1/solution/upload_artifact.py",
+    "git": {
+        "remote": "https://github.com/hitoshikumagai/nd0821-c2-build-model-workflow-exercises.git",
+        "commit": "bc8f5247cdfadbbee2e49eefde2bab8084c63e6b"
+    },
+    "email": "78469337+hitoshikumagai@users.noreply.github.com",
+    "root": "/Users/kumagaihitoshi/Documents/GitHub/nd0821-c2-build-model-workflow-exercises",
+    "host": "kumagaioshisMBP",
+    "username": "kumagaihitoshi",
+    "executable": "/Users/kumagaihitoshi/.conda/envs/udacity/bin/python"
+}

@@ -1,0 +1,24 @@
+{
+    "os": "macOS-10.16-x86_64-i386-64bit",
+    "python": "3.8.12",
+    "heartbeatAt": "2022-01-26T11:25:45.858310",
+    "startedAt": "2022-01-26T11:25:43.968588",
+    "docker": null,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": [
+        "-f",
+        "/Users/kumagaihitoshi/Library/Jupyter/runtime/kernel-9856d8f8-49ba-464d-af56-87a5f6cadece.json"
+    ],
+    "state": "running",
+    "program": "nd0821-c2-build-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/eda-jvsc-235768b9-001d-4209-92c3-da7db283e0c5.ipynb",
+    "root": "/Users/kumagaihitoshi/Documents/GitHub/nd0821-c2-build-model-workflow-exercises",
+    "git": {
+        "remote": "https://github.com/hitoshikumagai/nd0821-c2-build-model-workflow-exercises.git",
+        "commit": "bc8f5247cdfadbbee2e49eefde2bab8084c63e6b"
+    },
+    "email": "78469337+hitoshikumagai@users.noreply.github.com",
+    "host": "kumagaioshisMBP",
+    "username": "kumagaihitoshi",
+    "executable": "/Users/kumagaihitoshi/.conda/envs/udacity/bin/python"
+}
