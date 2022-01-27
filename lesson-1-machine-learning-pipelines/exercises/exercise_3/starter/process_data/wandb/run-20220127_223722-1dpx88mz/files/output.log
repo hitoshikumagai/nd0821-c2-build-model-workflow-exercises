@@ -1,0 +1,10 @@
+
+2022-01-27 22:37:25,754 Downloading artifact
+2022-01-27 22:37:27,700 Performing t-SNE
+/Users/kumagaihitoshi/.local/lib/python3.8/site-packages/sklearn/manifold/_t_sne.py:790: FutureWarning: The default learning rate in TSNE will change from 200.0 to 'auto' in 1.2.
+  warnings.warn(
+/Users/kumagaihitoshi/.local/lib/python3.8/site-packages/sklearn/manifold/_t_sne.py:982: FutureWarning: The PCA initialization in TSNE will change to have the standard deviation of PC1 equal to 1e-4 in 1.2. This will ensure better convergence.
+  warnings.warn(
+2022-01-27 22:37:29,330 Uploading image to W&B
+2022-01-27 22:37:29,690 Creating artifact
+2022-01-27 22:37:29,695 Logging artifact

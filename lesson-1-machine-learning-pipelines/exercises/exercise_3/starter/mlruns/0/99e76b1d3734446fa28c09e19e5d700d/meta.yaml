@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/kumagaihitoshi/Documents/GitHub/nd0821-c2-build-model-workflow-exercises/lesson-1-machine-learning-pipelines/exercises/exercise_3/starter/mlruns/0/99e76b1d3734446fa28c09e19e5d700d/artifacts
+end_time: 1643290540812
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: 99e76b1d3734446fa28c09e19e5d700d
+run_uuid: 99e76b1d3734446fa28c09e19e5d700d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1643290527707
+status: 3
+tags: []
+user_id: kumagaihitoshi
