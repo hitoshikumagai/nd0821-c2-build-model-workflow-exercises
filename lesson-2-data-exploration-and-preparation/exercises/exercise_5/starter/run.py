@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 import argparse
 import logging
+import os
 import pandas as pd
 import wandb
 
@@ -13,6 +14,7 @@ def go(args):
 
     run = wandb.init(project="exercise_5", job_type="process_data")
     ## YOUR CODE HERE
+    logger.info("Downloading artifact")
     artifact = run.use_artifact(args.input_artifact)
     artifact_path = artifact.file()
 
@@ -25,7 +27,17 @@ def go(args):
     df['title'].fillna(value='', inplace=True)
     df['song_name'].fillna(value='', inplace=True)
     df['text_feature'] = df['title'] + ' ' + df['song_name']
-
+    filename = "preprocessed_data.csv"
+    df.to_csv(filename)
+    artifact = wandb.Artifact(
+        name=args.artifact_name,
+        type=args.artifact_type,
+        description=args.artifact_description,
+    )
+    artifact.add_file(filename)
+    logger.info("Logging artifact to %s", filename)
+    
+    os.remove(filename)
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
