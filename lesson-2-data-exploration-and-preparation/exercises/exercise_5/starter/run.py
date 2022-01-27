@@ -13,9 +13,15 @@ def go(args):
 
     run = wandb.init(project="exercise_5", job_type="process_data")
     ## YOUR CODE HERE
-    artifact = run.use_artifact("exercise_4/genres_mod.parquet:latest")
+    artifact = run.use_artifact(args.input_artifact)
+    artifact_path = artifact.file()
+
     df = pd.read_parquet(artifact.file())
+
+    logger.info("Dropping duplicates")
     df.drop_duplicates().reset_index(drop=True)
+
+    logger.info("Fixing missing values")
     df['title'].fillna(value='', inplace=True)
     df['song_name'].fillna(value='', inplace=True)
     df['text_feature'] = df['title'] + ' ' + df['song_name']
