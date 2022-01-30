@@ -1,0 +1,34 @@
+2022-01-31 06:35:08,056 INFO    MainThread:21921 [internal.py:wandb_internal():88] W&B internal server running at pid: 21921, started at: 2022-01-31 06:35:08.055874
+2022-01-31 06:35:08,057 DEBUG   HandlerThread:21921 [handler.py:handle_request():101] handle_request: check_version
+2022-01-31 06:35:08,057 INFO    WriterThread:21921 [datastore.py:open_for_write():77] open: /Users/kumagaihitoshi/Documents/GitHub/nd0821-c2-build-model-workflow-exercises/lesson-4-training-validation-experiment-tracking/exercises/exercise_12/starter/random_forest/wandb/run-20220131_063507-byrosidn/run-byrosidn.wandb
+2022-01-31 06:35:08,058 DEBUG   SenderThread:21921 [sender.py:send():122] send: header
+2022-01-31 06:35:08,058 DEBUG   SenderThread:21921 [sender.py:send():122] send: request
+2022-01-31 06:35:08,058 DEBUG   SenderThread:21921 [sender.py:send_request():131] send_request: check_version
+2022-01-31 06:35:08,283 DEBUG   SenderThread:21921 [sender.py:send():122] send: run
+2022-01-31 06:35:08,625 INFO    SenderThread:21921 [sender.py:_start_run_threads():596] run started: byrosidn with start time 1643578507
+2022-01-31 06:35:08,625 DEBUG   SenderThread:21921 [sender.py:send():122] send: summary
+2022-01-31 06:35:08,625 INFO    SenderThread:21921 [sender.py:_save_file():730] saving file wandb-summary.json with policy end
+2022-01-31 06:35:08,626 DEBUG   HandlerThread:21921 [handler.py:handle_request():101] handle_request: run_start
+2022-01-31 06:35:08,627 DEBUG   HandlerThread:21921 [meta.py:__init__():34] meta init
+2022-01-31 06:35:08,627 DEBUG   HandlerThread:21921 [meta.py:__init__():48] meta init done
+2022-01-31 06:35:08,627 DEBUG   HandlerThread:21921 [meta.py:probe():190] probe
+2022-01-31 06:35:08,628 DEBUG   HandlerThread:21921 [meta.py:_setup_git():180] setup git
+2022-01-31 06:35:08,659 DEBUG   HandlerThread:21921 [meta.py:_setup_git():187] setup git done
+2022-01-31 06:35:08,659 DEBUG   HandlerThread:21921 [meta.py:_save_pip():52] save pip
+2022-01-31 06:35:08,660 DEBUG   HandlerThread:21921 [meta.py:_save_pip():66] save pip done
+2022-01-31 06:35:08,660 DEBUG   HandlerThread:21921 [meta.py:probe():231] probe done
+2022-01-31 06:35:08,663 DEBUG   SenderThread:21921 [sender.py:send():122] send: files
+2022-01-31 06:35:08,663 INFO    SenderThread:21921 [sender.py:_save_file():730] saving file wandb-metadata.json with policy now
+2022-01-31 06:35:08,666 DEBUG   HandlerThread:21921 [handler.py:handle_request():101] handle_request: status
+2022-01-31 06:35:08,666 DEBUG   SenderThread:21921 [sender.py:send():122] send: request
+2022-01-31 06:35:08,666 DEBUG   SenderThread:21921 [sender.py:send_request():131] send_request: status
+2022-01-31 06:35:10,081 DEBUG   SenderThread:21921 [sender.py:send():122] send: config
+2022-01-31 06:35:12,068 DEBUG   SenderThread:21921 [sender.py:send():122] send: stats
+2022-01-31 06:35:16,679 DEBUG   SenderThread:21921 [sender.py:send():122] send: stats
+2022-01-31 06:35:21,287 DEBUG   SenderThread:21921 [sender.py:send():122] send: stats
+2022-01-31 06:35:22,561 DEBUG   SenderThread:21921 [sender.py:send():122] send: summary
+2022-01-31 06:35:22,561 INFO    SenderThread:21921 [sender.py:_save_file():730] saving file wandb-summary.json with policy end
+2022-01-31 06:35:23,571 DEBUG   HandlerThread:21921 [handler.py:handle_request():101] handle_request: log_artifact
+2022-01-31 06:35:23,571 DEBUG   SenderThread:21921 [sender.py:send():122] send: request
+2022-01-31 06:35:23,571 DEBUG   SenderThread:21921 [sender.py:send_request():131] send_request: log_artifact
+2022-01-31 06:35:23,975 DEBUG   HandlerThread:21921 [handler.py:handle_request():101] handle_request: status

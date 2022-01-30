@@ -1,0 +1,29 @@
+{
+    "os": "macOS-10.16-x86_64-i386-64bit",
+    "python": "3.8.12",
+    "heartbeatAt": "2022-01-30T21:30:40.599991",
+    "startedAt": "2022-01-30T21:30:39.481212",
+    "docker": null,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": [
+        "--train_data",
+        "exercise_6/data_train.csv:latest",
+        "--model_config",
+        "/Users/kumagaihitoshi/Documents/GitHub/nd0821-c2-build-model-workflow-exercises/lesson-4-training-validation-experiment-tracking/exercises/exercise_12/starter/multirun/2022-01-31/06-30-35/0/random_forest_config.yml",
+        "--export_artifact",
+        "model_export"
+    ],
+    "state": "running",
+    "program": "run.py",
+    "codePath": "lesson-4-training-validation-experiment-tracking/exercises/exercise_12/starter/random_forest/run.py",
+    "git": {
+        "remote": "https://github.com/hitoshikumagai/nd0821-c2-build-model-workflow-exercises.git",
+        "commit": "b17890c139cfa43d54442bd4303a790b6b0ecf8a"
+    },
+    "email": "78469337+hitoshikumagai@users.noreply.github.com",
+    "root": "/Users/kumagaihitoshi/Documents/GitHub/nd0821-c2-build-model-workflow-exercises",
+    "host": "kumagaioshisMBP",
+    "username": "kumagaihitoshi",
+    "executable": "/Users/kumagaihitoshi/.conda/envs/mlflow-259d53ab44a1e9011b0c64ae862f43343c0fc9e5/bin/python"
+}

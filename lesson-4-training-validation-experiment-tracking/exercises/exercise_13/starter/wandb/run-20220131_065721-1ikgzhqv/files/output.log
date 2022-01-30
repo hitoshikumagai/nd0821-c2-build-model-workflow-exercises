@@ -1,0 +1,7 @@
+2022-01-31 06:57:22,737 Downloading and reading test artifact
+2022-01-31 06:57:24,063 Extracting target from dataframe
+2022-01-31 06:57:24,070 Downloading and reading the exported model
+2022-01-31 06:57:26,168 Scoring
+2022-01-31 06:57:26,275 Computing confusion matrix
+/Users/kumagaihitoshi/.local/lib/python3.8/site-packages/sklearn/utils/deprecation.py:87: FutureWarning: Function plot_confusion_matrix is deprecated; Function `plot_confusion_matrix` is deprecated in 1.0 and will be removed in 1.2. Use one of the class methods: ConfusionMatrixDisplay.from_predictions or ConfusionMatrixDisplay.from_estimator.
+  warnings.warn(msg, category=FutureWarning)

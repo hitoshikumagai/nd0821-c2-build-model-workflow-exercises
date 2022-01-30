@@ -1,0 +1,51 @@
+2022-01-31 06:30:40,640 Downloading and reading train artifact
+2022-01-31 06:30:41,964 Extracting target from dataframe
+2022-01-31 06:30:41,966 Splitting train/val
+2022-01-31 06:30:41,994 Setting up pipeline
+2022-01-31 06:30:41,999 Fitting
+Traceback (most recent call last):
+  File "run.py", line 239, in <module>
+    go(args)
+  File "run.py", line 50, in go
+    pipe.fit(X_train, y_train)
+  File "/Users/kumagaihitoshi/.local/lib/python3.8/site-packages/sklearn/pipeline.py", line 390, in fit
+    Xt = self._fit(X, y, **fit_params_steps)
+  File "/Users/kumagaihitoshi/.local/lib/python3.8/site-packages/sklearn/pipeline.py", line 348, in _fit
+    X, fitted_transformer = fit_transform_one_cached(
+  File "/Users/kumagaihitoshi/.conda/envs/mlflow-259d53ab44a1e9011b0c64ae862f43343c0fc9e5/lib/python3.8/site-packages/joblib/memory.py", line 349, in __call__
+    return self.func(*args, **kwargs)
+  File "/Users/kumagaihitoshi/.local/lib/python3.8/site-packages/sklearn/pipeline.py", line 893, in _fit_transform_one
+    res = transformer.fit_transform(X, y, **fit_params)
+  File "/Users/kumagaihitoshi/.local/lib/python3.8/site-packages/sklearn/compose/_column_transformer.py", line 675, in fit_transform
+    result = self._fit_transform(X, y, _fit_transform_one)
+  File "/Users/kumagaihitoshi/.local/lib/python3.8/site-packages/sklearn/compose/_column_transformer.py", line 606, in _fit_transform
+    return Parallel(n_jobs=self.n_jobs)(
+  File "/Users/kumagaihitoshi/.conda/envs/mlflow-259d53ab44a1e9011b0c64ae862f43343c0fc9e5/lib/python3.8/site-packages/joblib/parallel.py", line 1046, in __call__
+    while self.dispatch_one_batch(iterator):
+  File "/Users/kumagaihitoshi/.conda/envs/mlflow-259d53ab44a1e9011b0c64ae862f43343c0fc9e5/lib/python3.8/site-packages/joblib/parallel.py", line 861, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "/Users/kumagaihitoshi/.conda/envs/mlflow-259d53ab44a1e9011b0c64ae862f43343c0fc9e5/lib/python3.8/site-packages/joblib/parallel.py", line 779, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+  File "/Users/kumagaihitoshi/.conda/envs/mlflow-259d53ab44a1e9011b0c64ae862f43343c0fc9e5/lib/python3.8/site-packages/joblib/_parallel_backends.py", line 208, in apply_async
+    result = ImmediateResult(func)
+  File "/Users/kumagaihitoshi/.conda/envs/mlflow-259d53ab44a1e9011b0c64ae862f43343c0fc9e5/lib/python3.8/site-packages/joblib/_parallel_backends.py", line 572, in __init__
+    self.results = batch()
+  File "/Users/kumagaihitoshi/.conda/envs/mlflow-259d53ab44a1e9011b0c64ae862f43343c0fc9e5/lib/python3.8/site-packages/joblib/parallel.py", line 262, in __call__
+    return [func(*args, **kwargs)
+  File "/Users/kumagaihitoshi/.conda/envs/mlflow-259d53ab44a1e9011b0c64ae862f43343c0fc9e5/lib/python3.8/site-packages/joblib/parallel.py", line 262, in <listcomp>
+    return [func(*args, **kwargs)
+  File "/Users/kumagaihitoshi/.local/lib/python3.8/site-packages/sklearn/utils/fixes.py", line 216, in __call__
+    return self.function(*args, **kwargs)
+  File "/Users/kumagaihitoshi/.local/lib/python3.8/site-packages/sklearn/pipeline.py", line 893, in _fit_transform_one
+    res = transformer.fit_transform(X, y, **fit_params)
+  File "/Users/kumagaihitoshi/.local/lib/python3.8/site-packages/sklearn/pipeline.py", line 434, in fit_transform
+    return last_step.fit_transform(Xt, y, **fit_params_last_step)
+  File "/Users/kumagaihitoshi/.local/lib/python3.8/site-packages/sklearn/feature_extraction/text.py", line 2077, in fit_transform
+    X = super().fit_transform(raw_documents)
+  File "/Users/kumagaihitoshi/.local/lib/python3.8/site-packages/sklearn/feature_extraction/text.py", line 1313, in fit_transform
+    self._validate_params()
+  File "/Users/kumagaihitoshi/.local/lib/python3.8/site-packages/sklearn/feature_extraction/text.py", line 1254, in _validate_params
+    check_scalar(self.max_features, "max_features", numbers.Integral, min_val=0)
+  File "/Users/kumagaihitoshi/.local/lib/python3.8/site-packages/sklearn/utils/validation.py", line 1307, in check_scalar
+    raise TypeError(f"{name} must be an instance of {target_type}, not {type(x)}.")
+TypeError: max_features must be an instance of <class 'numbers.Integral'>, not <class 'str'>.
