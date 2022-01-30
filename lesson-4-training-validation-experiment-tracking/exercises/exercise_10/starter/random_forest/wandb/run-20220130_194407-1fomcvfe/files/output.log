@@ -1,0 +1,12 @@
+2022-01-30 19:44:08,650 Downloading and reading train artifact
+2022-01-30 19:44:10,349 Extracting target from dataframe
+2022-01-30 19:44:10,355 Splitting train/val
+2022-01-30 19:44:10,386 Setting up pipeline
+Traceback (most recent call last):
+  File "run.py", line 210, in <module>
+    go(args)
+  File "run.py", line 43, in go
+    pipe = get_inference_pipeline(args)
+  File "run.py", line 175, in get_inference_pipeline
+    ("classifier", RandomForestClassifier(**model_config)),
+TypeError: __init__() got an unexpected keyword argument 'min_impurity_split'

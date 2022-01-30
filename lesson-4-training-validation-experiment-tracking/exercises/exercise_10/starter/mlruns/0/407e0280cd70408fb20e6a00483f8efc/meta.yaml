@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/kumagaihitoshi/Documents/GitHub/nd0821-c2-build-model-workflow-exercises/lesson-4-training-validation-experiment-tracking/exercises/exercise_10/starter/mlruns/0/407e0280cd70408fb20e6a00483f8efc/artifacts
+end_time: 1643539583194
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: 407e0280cd70408fb20e6a00483f8efc
+run_uuid: 407e0280cd70408fb20e6a00483f8efc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1643539568435
+status: 4
+tags: []
+user_id: kumagaihitoshi

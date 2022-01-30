@@ -112,7 +112,6 @@ def get_inference_pipeline(args):
     categorical_transformer = make_pipeline(
         SimpleImputer(strategy="constant", fill_value=0), OrdinalEncoder()
     )
-
     # Numerical preprocessing pipeline
     numeric_features = sorted([
         "danceability",
@@ -128,42 +127,50 @@ def get_inference_pipeline(args):
     ])
 
     ############# YOUR CODE HERE
-    numeric_transformer = # USE make_pipeline to create a pipeline containing a SimpleImputer using strategy=median
-                          # and a StandardScaler (you can use the default options for the latter)
-
+    # USE make_pipeline to create a pipeline containing a SimpleImputer using strategy=median
+    # and a StandardScaler (you can use the default options for the latter)
+    numeric_transformer = make_pipeline(
+        SimpleImputer(strategy="median"), StandardScaler()
+    )
     # Textual ("nlp") preprocessing pipeline
     nlp_features = ["text_feature"]
     # This trick is needed because SimpleImputer wants a 2d input, but
     # TfidfVectorizer wants a 1d input. So we reshape in between the two steps
     reshape_to_1d = FunctionTransformer(np.reshape, kw_args={"newshape": -1})
-
     ############# YOUR CODE HERE
-    nlp_transformer = # USE make_pipeline to create a pipeline containing a SimpleImputer with strategy=constant and
-                      # fill_value="" (the empty string), followed by our custom reshape_to_1d instance, and finally
-                      # insert a TfidfVectorizer with the options binary=True
-
+    # USE make_pipeline to create a pipeline containing a SimpleImputer with strategy=constant and
+    # fill_value="" (the empty string), followed by our custom reshape_to_1d instance, and finally
+    # insert a TfidfVectorizer with the options binary=True
+    nlp_transformer = make_pipeline(
+        SimpleImputer(strategy="constant", fill_value=""), 
+        reshape_to_1d,
+        TfidfVectorizer(binary=True),
+    )
     # Put the 3 tracks together into one pipeline using the ColumnTransformer
     # This also drops the columns that we are not explicitly transforming
     preprocessor = ColumnTransformer(
         transformers=[
             ("num", numeric_transformer, numeric_features),
-            ("cat", # COMPLETE HERE using the categorical transformer and the categorical_features,
+            ("cat", categorical_transformer, categorical_features),
             ("nlp1", nlp_transformer, nlp_features),
         ],
         remainder="drop",  # This drops the columns that we do not transform (i.e., we don't use)
     )
-
     # Get the configuration for the model
     with open(args.model_config) as fp:
         model_config = json.load(fp)
     # Add it to the W&B configuration so the values for the hyperparams
     # are tracked
     wandb.config.update(model_config)
-
-    ############# YOUR CODE HERE
     # Append classifier to preprocessing pipeline.
     # Now we have a full prediction pipeline.
-    pipe = # CREATE a Pipeline instances with 2 steps: one step called "preprocessor" using the
+    pipe = Pipeline(
+        steps=[
+            ("preprocessor", preprocessor),
+            ("classifier", RandomForestClassifier(**model_config)),
+        ]
+    )
+           # CREATE a Pipeline instances with 2 steps: one step called "preprocessor" using the
            # preprocessor instance, and another one called "classifier" using RandomForestClassifier(**model_config)
            # (i.e., a Random Forest with the configuration we have received as input)
            # NOTE: here you should create the Pipeline object directly, and not make_pipeline

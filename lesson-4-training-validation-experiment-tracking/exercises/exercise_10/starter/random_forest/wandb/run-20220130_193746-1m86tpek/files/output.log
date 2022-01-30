@@ -1,0 +1,12 @@
+2022-01-30 19:37:48,395 Downloading and reading train artifact
+2022-01-30 19:37:50,330 Extracting target from dataframe
+2022-01-30 19:37:50,335 Splitting train/val
+2022-01-30 19:37:50,366 Setting up pipeline
+Traceback (most recent call last):
+  File "run.py", line 211, in <module>
+    go(args)
+  File "run.py", line 43, in go
+    pipe = get_inference_pipeline(args)
+  File "run.py", line 176, in get_inference_pipeline
+    steps=[("preprocessor", instance1),
+NameError: name 'instance1' is not defined
