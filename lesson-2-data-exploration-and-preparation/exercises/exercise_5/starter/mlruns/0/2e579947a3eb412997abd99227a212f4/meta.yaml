@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/kumagaihitoshi/Documents/GitHub/nd0821-c2-build-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_5/starter/mlruns/0/2e579947a3eb412997abd99227a212f4/artifacts
+end_time: 1643515098542
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: 2e579947a3eb412997abd99227a212f4
+run_uuid: 2e579947a3eb412997abd99227a212f4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1643515080745
+status: 3
+tags: []
+user_id: kumagaihitoshi

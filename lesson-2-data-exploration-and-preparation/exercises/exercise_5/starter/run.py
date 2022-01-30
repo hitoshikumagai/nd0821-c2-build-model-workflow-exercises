@@ -18,7 +18,7 @@ def go(args):
     artifact = run.use_artifact(args.input_artifact)
     artifact_path = artifact.file()
 
-    df = pd.read_parquet(artifact.file())
+    df = pd.read_parquet(artifact_path)
 
     logger.info("Dropping duplicates")
     df.drop_duplicates().reset_index(drop=True)
@@ -27,7 +27,8 @@ def go(args):
     df['title'].fillna(value='', inplace=True)
     df['song_name'].fillna(value='', inplace=True)
     df['text_feature'] = df['title'] + ' ' + df['song_name']
-    filename = "preprocessed_data.csv"
+
+    filename = "processed_data.csv"
     df.to_csv(filename)
     artifact = wandb.Artifact(
         name=args.artifact_name,
@@ -35,9 +36,12 @@ def go(args):
         description=args.artifact_description,
     )
     artifact.add_file(filename)
-    logger.info("Logging artifact to %s", filename)
+
+    logger.info("Logging artifact")
+    run.log_artifact(artifact)
     
     os.remove(filename)
+
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(

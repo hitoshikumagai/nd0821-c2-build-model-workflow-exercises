@@ -1,0 +1,31 @@
+{
+    "os": "macOS-10.16-x86_64-i386-64bit",
+    "python": "3.8.12",
+    "heartbeatAt": "2022-01-30T03:58:08.133685",
+    "startedAt": "2022-01-30T03:58:07.070219",
+    "docker": null,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": [
+        "--input_artifact",
+        "exercise_4/genres_mod.parquet:latest",
+        "--artifact_name",
+        "preprocessed_data.csv",
+        "--artifact_type",
+        "clean_data",
+        "--artifact_description",
+        "Data after preprocessing"
+    ],
+    "state": "running",
+    "program": "run.py",
+    "codePath": "lesson-2-data-exploration-and-preparation/exercises/exercise_5/starter/run.py",
+    "git": {
+        "remote": "https://github.com/hitoshikumagai/nd0821-c2-build-model-workflow-exercises.git",
+        "commit": "6cb0e26972ed94708145f846e0c6e67abf0223e3"
+    },
+    "email": "78469337+hitoshikumagai@users.noreply.github.com",
+    "root": "/Users/kumagaihitoshi/Documents/GitHub/nd0821-c2-build-model-workflow-exercises",
+    "host": "kumagaioshisMBP",
+    "username": "kumagaihitoshi",
+    "executable": "/Users/kumagaihitoshi/.conda/envs/mlflow-2c6e6e31c4b7c87c9e59aeb22d34fcd10b15af54/bin/python"
+}
