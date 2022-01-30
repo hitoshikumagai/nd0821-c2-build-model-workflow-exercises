@@ -1,0 +1,21 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.9.10, pytest-6.2.2, py-1.11.0, pluggy-0.13.1 -- /Users/kumagaihitoshi/.conda/envs/mlflow-7398531e5288219e428182dc4d6601ae57991d39/bin/python
+cachedir: .pytest_cache
+rootdir: /Users/kumagaihitoshi/Documents/GitHub/nd0821-c2-build-model-workflow-exercises/lesson-3-data-validation/exercises/exercise_9/starter
+collecting ... collected 0 items / 1 error
+
+==================================== ERRORS ====================================
+________________________ ERROR collecting test_data.py _________________________
+test_data.py:7: in <module>
+    @pytest.fixture(scope="session")
+E   NameError: name 'pytest' is not defined
+=============================== warnings summary ===============================
+../../../../../../../.conda/envs/mlflow-7398531e5288219e428182dc4d6601ae57991d39/lib/python3.9/site-packages/wandb/vendor/watchdog/utils/bricks.py:175
+  /Users/kumagaihitoshi/.conda/envs/mlflow-7398531e5288219e428182dc4d6601ae57991d39/lib/python3.9/site-packages/wandb/vendor/watchdog/utils/bricks.py:175: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
+    class OrderedSet(collections.MutableSet):
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+=========================== short test summary info ============================
+ERROR test_data.py - NameError: name 'pytest' is not defined
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+========================= 1 warning, 1 error in 0.56s ==========================

@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/kumagaihitoshi/Documents/GitHub/nd0821-c2-build-model-workflow-exercises/lesson-3-data-validation/exercises/exercise_9/starter/mlruns/0/acf97047434a411ca67dc02025a4525a/artifacts
+end_time: 1643524912209
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: acf97047434a411ca67dc02025a4525a
+run_uuid: acf97047434a411ca67dc02025a4525a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1643524898003
+status: 4
+tags: []
+user_id: kumagaihitoshi

@@ -1,0 +1,25 @@
+{
+    "os": "macOS-12.0.1-x86_64-i386-64bit",
+    "python": "3.9.10",
+    "heartbeatAt": "2022-01-30T05:46:51.037506",
+    "startedAt": "2022-01-30T05:46:49.879500",
+    "docker": null,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": [
+        "-s",
+        "-vv",
+        "."
+    ],
+    "state": "running",
+    "program": "<python with no main file>",
+    "git": {
+        "remote": "https://github.com/hitoshikumagai/nd0821-c2-build-model-workflow-exercises.git",
+        "commit": "29e8446f37d9a2b1bf468e88f089238aee4bfe35"
+    },
+    "email": "78469337+hitoshikumagai@users.noreply.github.com",
+    "root": "/Users/kumagaihitoshi/Documents/GitHub/nd0821-c2-build-model-workflow-exercises",
+    "host": "kumagaioshisMBP",
+    "username": "kumagaihitoshi",
+    "executable": "/Users/kumagaihitoshi/.conda/envs/mlflow-a3af6a16a95faee04af2c40a1852613ae4973185/bin/python"
+}
