@@ -1,0 +1,17 @@
+2022-01-30 20:57:46,150 Downloading and reading train artifact
+2022-01-30 20:57:48,225 Extracting target from dataframe
+2022-01-30 20:57:48,227 Splitting train/val
+Traceback (most recent call last):
+  File "run.py", line 176, in <module>
+    go(args)
+  File "run.py", line 39, in go
+    X_train, X_val, y_train, y_val = train_test_split(
+  File "/Users/kumagaihitoshi/.local/lib/python3.8/site-packages/sklearn/model_selection/_split.py", line 2441, in train_test_split
+    train, test = next(cv.split(X=arrays[0], y=stratify))
+  File "/Users/kumagaihitoshi/.local/lib/python3.8/site-packages/sklearn/model_selection/_split.py", line 2022, in split
+    y = check_array(y, ensure_2d=False, dtype=None)
+  File "/Users/kumagaihitoshi/.local/lib/python3.8/site-packages/sklearn/utils/validation.py", line 800, in check_array
+    _assert_all_finite(array, allow_nan=force_all_finite == "allow-nan")
+  File "/Users/kumagaihitoshi/.local/lib/python3.8/site-packages/sklearn/utils/validation.py", line 122, in _assert_all_finite
+    raise ValueError("Input contains NaN")
+ValueError: Input contains NaN

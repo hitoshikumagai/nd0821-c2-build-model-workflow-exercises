@@ -1,0 +1,2 @@
+- random_forest_pipeline.random_forest.n_estimators=10
+- random_forest_pipeline.tfidf.max_features=100

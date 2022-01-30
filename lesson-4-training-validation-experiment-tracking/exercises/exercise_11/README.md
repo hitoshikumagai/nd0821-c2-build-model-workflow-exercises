@@ -19,6 +19,10 @@ mlflow run . -P hydra_options="random_forest_pipeline.random_forest.max_depth=5"
 Now run another experiment overriding ``n_estimators`` in the ``random_forest`` section and setting 
 it to 10.
 
+```bash
+mlflow run . -P hydra_options="random_forest_pipeline.random_forest.n_estimators=range(1,11,1)"
+```
+
 ## Experiment 3: sweep on ``max_depth``
 Let's now exploit the sweep capability of Hydra to try several options for the ``max_depth``
 parameter.
