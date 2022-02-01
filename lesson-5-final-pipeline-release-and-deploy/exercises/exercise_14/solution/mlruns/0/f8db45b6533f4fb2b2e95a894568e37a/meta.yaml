@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/kumagaihitoshi/Documents/GitHub/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/mlruns/0/f8db45b6533f4fb2b2e95a894568e37a/artifacts
+end_time: 1643662153151
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: f8db45b6533f4fb2b2e95a894568e37a
+run_uuid: f8db45b6533f4fb2b2e95a894568e37a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1643662147130
+status: 4
+tags: []
+user_id: kumagaihitoshi
